@@ -1,0 +1,28 @@
+<!-- select option  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="gender">
+        <option value="">SELECT GENDER </option>
+        <option value="MALE">MALE</option>
+        <option value="FEMALE">FEMALE </option>
+
+    </select>
+    <button onclick="getdata()">click me </button>
+
+    <script>
+        function getdata(){
+            let store = document.getElementById('gender').value
+            console.log(store)
+        }
+    </script>
+
+
+</body>
+</html>
