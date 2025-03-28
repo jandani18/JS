@@ -1,0 +1,11 @@
+.state-card {
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 300px;
+    text-align: center;
+    margin-left: 30PX;
+    padding-left: 20PX;
+}
