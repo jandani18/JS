@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form Fields */
+input, textarea, select, button {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input, textarea, select {
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+button:hover {
+    background: blanchedalmond;
+    transform: scale(1.05);
+    color: black;
+}
+
+/* Search & Filter Fields */
+#search, #filter {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Recipe List (No Cards, Just a Clean List) */
+#recipe-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Each Recipe */
+.recipe {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.recipe:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect */
+.recipe:hover {
+    background: #f1f1f1;
+}
+
+/* Recipe Title */
+.recipe h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Recipe Description */
+.recipe p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Delete Button */
+.recipe button {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.recipe button:hover {
+    background: linear-gradient(135deg, #c82333, #a71d2a);
+    transform: scale(1.05);
+}

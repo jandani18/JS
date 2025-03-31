@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Recipe Book</h1>
+    
+    <!-- Recipe Form -->
+    <form id="recipe-form">
+        <input type="text" id="title" placeholder="Recipe Title" required>
+        <input type="text" id="ingredients" placeholder="Ingredients (comma separated)" required>
+        <textarea id="instructions" placeholder="Instructions" required></textarea>
+        <select id="cuisine">
+            <option value="">Select Cuisine</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Indian">Indian</option>
+            <option value="Chinese">Chinese</option>
+        </select>
+        <button type="submit">Add Recipe</button>
+    </form>
+    
+    <!-- Search and Filter -->
+    <input type="text" id="search" placeholder="Search by title or ingredient">
+    <select id="filter">
+        <option value="">Filter by Cuisine</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Indian">Indian</option>
+        <option value="Chinese">Chinese</option>
+    </select>
+    
+    <!-- Recipe List -->
+    <div id="recipe-list"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
